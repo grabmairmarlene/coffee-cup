@@ -7,17 +7,20 @@ services:
       image: nginx:alpine
       container_name: coffee-cup-webserver
       restart: always
-      working_dir: /web
+      working_dir: /usr/share/nginx/www
       volumes:
-          - ./phpdocker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+          - ./web:/usr/share/nginx/www
+          - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       ports:
        - "15001:80"
 
     php-fpm:
-      build: phpdocker/php-fpm
+      build:
+        context: docker/php-fpm
+        args:
+          isProduction: "false"
       container_name: coffee-cup-php-fpm
       restart: always
-      working_dir: /application
+      working_dir: /var/www/html
       volumes:
-        - .:/application
-        - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.3/fpm/conf.d/99-overrides.ini
+        - .:/var/www/html
