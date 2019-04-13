@@ -7,8 +7,8 @@ RUN if [ "${isProduction}" = "true" ] ; then mv "$PHP_INI_DIR/php.ini-production
 
 # Install selected extensions and other stuff
 RUN apk update && apk upgrade \
-        && apk add php7-memcached \
-		&& docker-php-ext-install mysqli
+        && apk add php7-memcached libpng-dev\
+		&& docker-php-ext-install mysqli gd
 
 # Install xdebug on development environments
 RUN if [ "${isProduction}" = "false" ] ; then apk add php7-xdebug ; fi
