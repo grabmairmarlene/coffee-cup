@@ -48,6 +48,11 @@ add_action('after_setup_theme', function () {
     ]);
 
     /**
+     * Register bootstrap nav walker (https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
+     */
+    require_once 'Utils/class-wp-bootstrap-navwalker.php';
+
+    /**
      * Enable post thumbnails
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
