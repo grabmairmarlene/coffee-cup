@@ -10,6 +10,11 @@ web/app/uploads/*
 web/wp
 web/.htaccess
 
+## Wordpress Plugins
+### W3C Total Cache
+web/app/cache/
+web/nginx.conf
+
 # Dotenv
 .env
 .env.*
