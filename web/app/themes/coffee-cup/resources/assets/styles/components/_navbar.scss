@@ -1,3 +1,7 @@
 .navbar-nav {
   text-align: center;
+
+  .nav-link:hover {
+    text-decoration: underline;
+  }
 }
