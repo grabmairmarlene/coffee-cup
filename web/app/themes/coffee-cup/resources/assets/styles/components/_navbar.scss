@@ -1,7 +1,19 @@
+.navbar {
+  background-image: linear-gradient(theme-color("dark"), transparent);
+}
+
 .navbar-nav {
   text-align: center;
+}
 
-  .nav-link:hover {
+.navbar-brand {
+  color: theme-color("light");
+}
+
+.nav-link {
+  color: theme-color("light");
+
+  :hover {
     text-decoration: underline;
     text-decoration-color: theme-color("primary");
   }

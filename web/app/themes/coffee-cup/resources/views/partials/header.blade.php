@@ -1,4 +1,5 @@
-<header class="banner">
+<header class="banner" style="background-image: url('https://devhut.azureedge.net/coffee-cup-wp/app/uploads/2019/03/DSC_2618.jpg')">
+
   <nav class="navbar navbar-expand-sm">
     <div class="container">
       <a class="navbar-brand align-self-center" href="{{ home_url('/') }}">
