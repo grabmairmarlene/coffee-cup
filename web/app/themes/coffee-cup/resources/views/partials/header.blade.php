@@ -1,5 +1,5 @@
 <header class="banner">
-  <nav class="navbar navbar-expand-sm navbar-light">
+  <nav class="navbar navbar-expand-sm">
     <div class="container">
       <a class="navbar-brand align-self-center" href="{{ home_url('/') }}">
         <img src="@asset('images/logo/coffee-cat-stock-icon-navbar.png')" height="50px" alt="The logo of coffee cup" />
