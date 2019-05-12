@@ -405,8 +405,8 @@
     "cdn.rackspace_cdn.service.name": "",
     "cdn.rackspace_cdn.service.protocol": "http",
     "cdn.rackspace_cdn.domains": [],
-    "cdn.azure.user": "devhut",
-    "cdn.azure.key": "n3GOaP7SM9XhRphzmFwLvfPEU\/qzyc+Evo4bIlN+oVqrsGVuWis8dqCDTj3HBLsyI9h1Ut\/yEvtB9o0slZU\/AA==",
+    "cdn.azure.user": "",
+    "cdn.azure.key": "",
     "cdn.azure.container": "coffee-cup-wp",
     "cdn.azure.cname": [
         "devhut.azureedge.net"
