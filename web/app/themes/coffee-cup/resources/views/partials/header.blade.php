@@ -9,30 +9,26 @@
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
+        data-target="#navbar-navigation-items"
+        aria-controls="navbar-navigation-items"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        @if (has_nav_menu('primary_navigation'))
-        {!!
-          wp_nav_menu( array(
-            'theme_location'  => 'primary_navigation',
-            'depth'	          => 2,
-            'container'       => 'div',
-            'container_class' => 'collapse navbar-collapse',
-            'container_id'    => 'bs-example-navbar-collapse-1',
-            'menu_class'      => 'navbar-nav ml-auto',
-            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'          => new WP_Bootstrap_Navwalker(),
-          ) );
-        !!}
+      @if (has_nav_menu('primary_navigation'))
+      {!!
+        wp_nav_menu( array(
+          'theme_location'  => 'primary_navigation',
+          'depth'	          => 2,
+          'container'       => 'div',
+          'container_class' => 'collapse navbar-collapse',
+          'container_id'    => 'navbar-navigation-items',
+          'menu_class'      => 'navbar-nav',
+          'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+          'walker'          => new WP_Bootstrap_Navwalker(),
+        ) );
+      !!}
         @endif
-      </div>
     </div>
   </nav>
-  <nav class="nav-primary"></nav>
 </header>
