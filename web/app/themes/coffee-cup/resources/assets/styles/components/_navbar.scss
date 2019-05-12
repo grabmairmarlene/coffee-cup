@@ -3,5 +3,6 @@
 
   .nav-link:hover {
     text-decoration: underline;
+    text-decoration-color: theme-color("primary");
   }
 }
