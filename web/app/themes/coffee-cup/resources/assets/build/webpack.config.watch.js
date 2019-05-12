@@ -1,6 +1,5 @@
 const url = require('url');
 const webpack = require('webpack');
-const BrowserSyncPlugin = require('browsersync-webpack-plugin');
 
 const config = require('./config');
 
@@ -26,12 +25,5 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    new BrowserSyncPlugin({
-      target,
-      open: config.open,
-      proxyUrl: config.proxyUrl,
-      watch: config.watch,
-      delay: 500,
-    }),
   ],
 };
