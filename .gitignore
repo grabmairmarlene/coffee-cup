@@ -14,6 +14,7 @@ web/.htaccess
 ### W3C Total Cache
 web/app/cache/
 web/nginx.conf
+web/app/w3tc-config/master.php
 
 # Dotenv
 .env
