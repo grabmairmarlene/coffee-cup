@@ -346,7 +346,7 @@
     "cdn.queue.interval": "900",
     "cdn.queue.limit": "25",
     "cdn.force.rewrite": "0",
-    "cdn.autoupload.enabled": "0",
+    "cdn.autoupload.enabled": "1",
     "cdn.autoupload.interval": "3600",
     "cdn.canonical_header": false,
     "cdn.admin.media_library": "0",
@@ -411,7 +411,7 @@
     "cdn.azure.cname": [
         "devhut.azureedge.net"
     ],
-    "cdn.azure.ssl": "auto",
+    "cdn.azure.ssl": "enabled",
     "cdn.mirror.domain": [],
     "cdn.mirror.ssl": "auto",
     "cdn.limelight.short_name": "",
