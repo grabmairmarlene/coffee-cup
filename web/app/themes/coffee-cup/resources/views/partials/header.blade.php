@@ -23,7 +23,7 @@
           'container'       => 'div',
           'container_class' => 'collapse navbar-collapse',
           'container_id'    => 'navbar-navigation-items',
-          'menu_class'      => 'navbar-nav',
+          'menu_class'      => 'navbar-nav ml-auto',
           'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
           'walker'          => new WP_Bootstrap_Navwalker(),
         ) );
