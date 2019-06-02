@@ -1,10 +1,10 @@
-<header class="banner" style="background-image: url('https://devhut.azureedge.net/coffee-cup-wp/app/uploads/2019/03/DSC_2618.jpg')">
+<header class="banner" style="background-image: url('https://devhut.azureedge.net/coffee-cup-wp/app/uploads/2019/05/DSC_4268.jpg')">
 
   <nav class="navbar navbar-expand-sm">
     <div class="container">
       <a class="navbar-brand align-self-center" href="{{ home_url('/') }}">
-        <img src="@asset('images/logo/coffee-cat-stock-icon-navbar.png')" height="50px" alt="The logo of coffee cup" />
-        <span>{{ get_bloginfo("name", "display") }}</span>
+        <img src="@asset('images/logo/coffeecup-logo-white.png')" height="50px" alt="The logo of CoffeeCup" />
+        <!--<span>{{ get_bloginfo("name", "display") }}</span>-->
       </a>
       <button
         class="navbar-toggler"
