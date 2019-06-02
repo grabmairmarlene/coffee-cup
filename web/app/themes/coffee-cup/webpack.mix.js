@@ -15,6 +15,7 @@ mix
   .setPublicPath("dist")
   .js("resources/assets/scripts/main.js", "scripts/")
   .sass("resources/assets/styles/main.scss", "styles/")
+  .copy("resources/assets/images", "dist/images/")
   .options({
     processCssUrls: false,
   });
