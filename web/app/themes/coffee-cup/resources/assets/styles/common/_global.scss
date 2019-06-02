@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  flex: 1 1 300px;
+  display: flex;
+}
+
+main {
+  flex: 2 1;
+  display: flex;
+}
+
+footer {
+  flex: 0;
+  display: flex;
+}
