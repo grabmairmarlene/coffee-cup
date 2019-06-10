@@ -24,5 +24,3 @@ services:
       working_dir: /var/www/html
       volumes:
         - .:/var/www/html
-      ports:
-        - "15002:9000"
