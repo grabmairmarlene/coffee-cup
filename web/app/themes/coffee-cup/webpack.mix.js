@@ -14,14 +14,14 @@ let mix = require("laravel-mix");
 mix
   .setPublicPath("dist")
   .js("resources/assets/scripts/main.js", "scripts/")
+  .sass("node_modules/bootstrap/scss/bootstrap.scss", "styles/")
   .sass("resources/assets/styles/main.scss", "styles/")
-  .copy("resources/assets/images", "dist/images/")
   .options({
     processCssUrls: false,
   });
 
 mix.browserSync({
-  proxy: "localhost:15001",
+  proxy: "localhost",
   files: [
     'resources/views/**',
     'dist/**',

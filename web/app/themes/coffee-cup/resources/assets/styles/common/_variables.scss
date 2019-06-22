@@ -1,9 +1,12 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
 $theme-colors: (
-  primary: #BD5D4F,
-  light: #F8F3ED
+  primary: #bd5d4f,
+  light: #f8f3ed
+  
 );
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
