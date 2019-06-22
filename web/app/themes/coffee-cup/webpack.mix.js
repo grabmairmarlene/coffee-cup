@@ -16,6 +16,7 @@ mix
   .js("resources/assets/scripts/main.js", "scripts/")
   .sass("node_modules/bootstrap/scss/bootstrap.scss", "styles/")
   .sass("resources/assets/styles/main.scss", "styles/")
+  .copy("resources/assets/images", "dist/images/")
   .options({
     processCssUrls: false,
   });
