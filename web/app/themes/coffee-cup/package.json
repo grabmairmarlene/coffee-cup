@@ -23,12 +23,15 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
+    "browser-sync": "^2.26.7",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-rev": "^9.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass-tilde-importer": "^1.0.2"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
