@@ -1,5 +1,7 @@
 .navbar {
   background-image: linear-gradient(theme-color("dark"), transparent);
+  flex: 1 1;
+  flex-direction: column;
 }
 
 .navbar-nav {

@@ -1,14 +1,15 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
 $theme-colors: (
   primary: #bd5d4f,
   light: #f8f3ed
-  
 );
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+
+@import "~bootstrap/scss/variables";
