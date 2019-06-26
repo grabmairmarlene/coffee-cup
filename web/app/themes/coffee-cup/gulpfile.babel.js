@@ -28,14 +28,8 @@ const paths = {
     revManifest: 'dist/assets.json',
 }
 
-/*
- * For small tasks you can export arrow functions
- */
 export const clean = () => del([distPath])
 
-/*
- * You can also declare named functions and export them as tasks
- */
 export function styles() {
     return gulp
         .src(`${paths.styles.src}/${paths.styles.mainEntry}`)
