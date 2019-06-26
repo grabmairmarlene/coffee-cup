@@ -7,8 +7,9 @@ import tildeImporter from 'node-sass-tilde-importer'
 import del from 'del'
 import browserSync from 'browser-sync'
 
-const distPath = 'dist'
 const paths = {
+    dist: 'dist',
+    revManifest: 'dist/assets.json',
     styles: {
         src: 'resources/assets/styles',
         mainEntry: 'main.scss',
@@ -23,12 +24,11 @@ const paths = {
     },
     images: {
         src: 'resources/assets/images',
-        dest: `images`,
+        dest: `images/`,
     },
-    revManifest: 'dist/assets.json',
 }
 
-export const clean = () => del([distPath])
+export const clean = () => del([paths.dist])
 
 export function styles() {
     return gulp
@@ -36,7 +36,7 @@ export function styles() {
         .pipe(sass({ importer: tildeImporter }))
         .pipe(concat(paths.styles.dest))
         .pipe(rev())
-        .pipe(gulp.dest(distPath))
+        .pipe(gulp.dest(paths.dist))
         .pipe(browserSync.stream())
         .pipe(
             rev.manifest({
@@ -55,7 +55,7 @@ export function scripts() {
         .pipe(babel())
         .pipe(concat(paths.scripts.dest))
         .pipe(rev())
-        .pipe(gulp.dest(distPath))
+        .pipe(gulp.dest(paths.dist))
         .pipe(
             rev.manifest({
                 path: paths.revManifest,
@@ -66,7 +66,9 @@ export function scripts() {
 }
 
 export function images() {
-    return gulp.src(paths.images.src).pipe(gulp.dest(paths.images.dest))
+    return gulp
+        .src(`${paths.images.src}/**/*`)
+        .pipe(gulp.dest(`${paths.dist}/${paths.images.dest}`))
 }
 
 export function watch() {
