@@ -4,18 +4,16 @@
   "author": "couple@coffee-cup.cc",
   "homepage": "https://coffee-cup.cc",
   "private": true,
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
   "browserslist": [
     "last 2 versions",
     "android 4",
     "opera 12"
   ],
-  "scripts": {},
+  "scripts": {
+    "start": "npx gulp",
+    "watch": "npx gulp watch",
+    "serve": "npx gulp serve"
+  },
   "engines": {
     "node": ">= 8.0.0"
   },
@@ -28,7 +26,6 @@
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.4.0",
     "gulp-rev": "^9.0.0",
     "gulp-sass": "^4.0.2",
     "node-sass-tilde-importer": "^1.0.2"
