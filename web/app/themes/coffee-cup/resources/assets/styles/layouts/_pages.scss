@@ -1,0 +1,13 @@
+.container {
+    justify-content: center;
+}
+
+article {
+    max-width: 800px;
+    text-align: justify;
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+}

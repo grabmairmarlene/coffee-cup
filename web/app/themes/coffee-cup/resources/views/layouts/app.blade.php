@@ -5,16 +5,12 @@
     @php do_action('get_header') @endphp
     @include('partials.header')
     <main class="container" role="document">
-      <div class="content">
-        <article>
-          @yield('content')
-        </article>
-        @if (App\display_sidebar())
-          <aside class="sidebar">
-            @include('partials.sidebar')
-          </aside>
-        @endif
-      </div>
+      @yield('content')
+      @if (App\display_sidebar())
+        <aside class="sidebar">
+          @include('partials.sidebar')
+        </aside>
+      @endif
     </main>
     @php do_action('get_footer') @endphp
     @include('partials.footer')
