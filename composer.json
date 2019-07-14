@@ -42,9 +42,9 @@
         "composer/installers": "^1.4",
         "vlucas/phpdotenv": "^3.0.0",
         "oscarotero/env": "^1.1.0",
-        "roots/wordpress": "5.1.1",
-        "roots/wp-config": "1.0.0",
-        "roots/wp-password-bcrypt": "1.0.0",
+        "roots/wordpress": "5.*",
+        "roots/wp-config": "1.*",
+        "roots/wp-password-bcrypt": "1.*",
         "wpackagist-plugin/w3-total-cache": "*",
         "wpackagist-plugin/disable-comments": "*"
     },
