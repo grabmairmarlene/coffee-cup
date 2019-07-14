@@ -1,22 +1,44 @@
 body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
 }
 
 header {
-  flex: 1 1 300px;
-  display: flex;
+    flex: 1 1 300px;
+    display: flex;
 }
 
 main {
-  flex: 2 1;
-  display: flex;
-  margin-top: 2.5rem;
+    flex: 2 1;
+    display: flex;
+    margin-top: 2.5rem;
 }
 
 footer {
-  flex: 0;
-  display: flex;
+    flex: 0;
+    display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
