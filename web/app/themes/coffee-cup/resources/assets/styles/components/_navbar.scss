@@ -1,22 +1,22 @@
 .navbar {
-  background-image: linear-gradient(theme-color("dark"), transparent);
-  flex: 1 1;
-  flex-direction: column;
+    background-image: linear-gradient(theme-color('dark'), transparent);
+    flex: 1 1;
+    flex-direction: column;
 }
 
 .navbar-nav {
-  text-align: center;
+    text-align: center;
 }
 
 .navbar-brand {
-  color: theme-color("light");
+    color: theme-color('light');
 }
 
 .nav-link {
-  color: theme-color("light");
+    color: theme-color('light');
 
-  :hover {
-    text-decoration: underline;
-    text-decoration-color: theme-color("primary");
-  }
+    :hover {
+        text-decoration: underline;
+        text-decoration-color: theme-color('primary');
+    }
 }
