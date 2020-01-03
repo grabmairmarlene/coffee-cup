@@ -1,4 +1,4 @@
-<header class="banner" style="background-image: url('https://devhut.azureedge.net/coffee-cup-wp/app/uploads/2019/05/DSC_4268.jpg')">
+<header class="banner" style="background-image: url(@asset('images/header/coffee-cup-header_1920x400.jpg'))">
 
   <nav class="navbar navbar-expand-sm">
     <div class="container">

@@ -1,5 +1,5 @@
 .navbar {
-    background-image: linear-gradient(theme-color('dark'), transparent);
+  height: 100%;
     flex: 1 1;
     flex-direction: column;
 }
@@ -13,10 +13,16 @@
 }
 
 .nav-link {
-    color: theme-color('light');
+  padding: 0 0 0.2rem 0 !important;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  line-height: 1;
 
-    :hover {
-        text-decoration: underline;
-        text-decoration-color: theme-color('primary');
+  font-size: large;
+  color: theme-color('dark');
+
+  &:hover {
+    color: theme-color('light');
+    border-bottom: 1px solid theme-color('light');
     }
 }
