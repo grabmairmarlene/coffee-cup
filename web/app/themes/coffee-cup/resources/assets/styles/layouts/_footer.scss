@@ -7,9 +7,15 @@
 
     .footer-main {
         display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
         padding: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
 
     .footer-copyright {
@@ -28,10 +34,17 @@
         list-style-type: none;
         display: flex;
         margin: 0;
+      padding: 0;
+      flex-direction: column;
+      text-align: center;
 
         a {
             padding: 1rem 0.5rem;
         }
+
+      @include media-breakpoint-up(sm) {
+        flex-direction: row;
+      }
     }
 
     a {
