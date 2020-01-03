@@ -1,15 +1,15 @@
 .navbar {
   height: 100%;
-    flex: 1 1;
-    flex-direction: column;
+  flex: 1 1;
+  flex-direction: column;
 }
 
 .navbar-nav {
-    text-align: center;
+  text-align: center;
 }
 
 .navbar-brand {
-    color: theme-color('light');
+  color: theme-color('light');
 }
 
 .nav-link {
@@ -24,5 +24,5 @@
   &:hover {
     color: theme-color('light');
     border-bottom: 1px solid theme-color('light');
-    }
+  }
 }
