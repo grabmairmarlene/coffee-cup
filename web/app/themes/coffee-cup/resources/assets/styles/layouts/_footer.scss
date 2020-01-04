@@ -25,6 +25,10 @@
     background-color: #000000ad;
     text-align: center;
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     p {
       margin-bottom: 0;
     }

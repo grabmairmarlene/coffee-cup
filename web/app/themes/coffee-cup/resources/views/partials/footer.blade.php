@@ -7,6 +7,8 @@
 {{ wp_nav_menu() }}
   </section>
   <div class="footer-copyright">
-    <p class="">Made with ❤ and a lot of ☕. Copyright © {{ date("Y") }}. All Rights Reserved.</p>
+    <span>Made with ❤ and a lot of ☕.</span>
+    <span> Copyright © {{ date("Y") }}.</span>
+    <span> All Rights Reserved.</span>
   </div>
 </footer>
